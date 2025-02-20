@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Nanum Gothic", serif;
+}
+
+/*pc버전*/
+
+/*con4*/
+.con4 {
+  width: 1200px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.con4 h2 {
+  color: #ff6f09;
+  font-size: 2.3rem;
+  margin: 2rem;
+}
+
+.con4 .span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.con4 ul {
+  display: flex;
+  color: #fff;
+}
+
+.con4 li {
+  position: relative;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.con4 li div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

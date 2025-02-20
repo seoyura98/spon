@@ -1,0 +1,333 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Nanum Gothic", serif;
+}
+
+/*pc버전*/
+
+/*header*/
+header {
+  margin: 0px auto;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: 0rem 1rem;
+  align-items: center;
+  box-sizing: border-box;
+}
+header a:hover {
+  color: #ff6f09;
+}
+
+h1 {
+  width: 5rem;
+  height: 31.65px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 31.65px;
+  width: 1200px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 0rem 1rem;
+}
+/*wrap01*/
+.wrap01 {
+  display: flex;
+  gap: 1rem;
+}
+
+.wrap02 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wrap02 .sponsor,
+.receipt,
+.menu {
+  font-size: 0.8rem;
+}
+
+.wrap02 .sponsor a {
+  background-color: red;
+  padding: 10px;
+}
+
+.wrap02 .sponsor a:hover {
+  background-color: #ccc;
+}
+
+/*visual*/
+
+.visual {
+  width: 1200px;
+  margin: 0px auto;
+  background-image: url(../img/캠페인_비주얼.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.visual div {
+  position: absolute;
+  left: 60%;
+  bottom: 10%;
+}
+.visual p {
+  font-weight: bold;
+  text-align: left;
+}
+
+.visual h3 {
+  font-size: 4.2rem;
+}
+
+.visual span {
+  color: #ff6f09;
+  font-family: "Architects Daughter", serif;
+  font-size: 5rem;
+}
+
+/*container*/
+.container {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+/*con01*/
+.con01 {
+  background-image: url(../img/캠페인_con1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 800px;
+  font-weight: bold;
+}
+
+.con01 img {
+  border-radius: 1rem;
+}
+
+.con01 span {
+  color: #ff6f09;
+  font-family: "Architects Daughter", serif;
+}
+.con01 .ribon {
+  font-family: "Gothic A1", serif;
+}
+
+.con01 .mean {
+  color: #fff;
+}
+
+.con01 .wrap01 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 5rem;
+}
+
+.con01 ul {
+  padding-top: 8rem;
+  font-size: 1.5rem;
+}
+
+.con01 li {
+  padding-bottom: 1.2em;
+}
+
+.con01 .img01 {
+  padding-top: 3rem;
+  position: relative;
+}
+
+.ocn01 .img01 img {
+  position: absolute;
+  top: 50%;
+}
+
+.con01 .img02 {
+  position: relative;
+}
+.con01 .img02 img {
+  width: 32rem;
+  position: absolute;
+  left: 35%;
+}
+
+/*con02*/
+
+.con02 p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1.5rem;
+  font-weight: bold;
+}
+
+.con02 span {
+  color: #ff6f09;
+}
+.con02 ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.con02 img {
+  width: 350px;
+  height: 350px;
+}
+
+.con02 div {
+  border: 1px solid #ff6f09;
+  width: 15rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #ff6f09;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 66.5%;
+  margin-top: 2rem;
+}
+
+/*con03*/
+
+.con03 h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 8rem 0rem 3rem;
+}
+.con03 span {
+  color: #ff6f09;
+}
+.con03 .always {
+  font-family: "Architects Daughter", serif;
+}
+
+.con03 ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.con03 li {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 2rem;
+  height: 330px;
+}
+.con03 img {
+  width: 300px;
+  border-radius: 2rem;
+}
+.con03 h4 {
+  color: #ff6f09;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  line-height: 3rem;
+}
+.con03 p {
+  font-weight: bold;
+}
+
+/*con04*/
+
+.con04 ul {
+  border-bottom: 1px solid#ccc;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  color: #ccc;
+}
+
+.con04 h3 {
+  text-align: center;
+  margin: 3rem;
+  font-size: 2rem;
+}
+
+.con04 i {
+  font-size: 1.5rem;
+}
+
+.con04 span {
+  font-family: "Architects Daughter", serif;
+}
+.con04 li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.con04 .a01,
+.con04 .a02,
+.con04 .a03 {
+  font-size: 1.2rem;
+  display: none;
+  font-weight: bold;
+}
+
+/*footer*/
+footer {
+  width: 1200px;
+  height: 280px;
+  margin: 0px auto;
+  background-color: #ffe1a1;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+}
+footer img {
+  width: 300px;
+}
+
+footer .wrap03 {
+  color: darkgray;
+  font-weight: bold;
+}
+footer .wrap03 p {
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+footer h2 {
+  font-size: 3.2rem;
+  text-align: right;
+}
+
+footer .txt02 p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+footer ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 5rem;
+}
