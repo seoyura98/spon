@@ -19,9 +19,15 @@ body {
 /*모바일 버전*/
 @media (max-width: 600px) {
   /*header*/
+<<<<<<< HEAD
   header {
     margin: 0px auto;
     background-color: rgba(255, 255, 255, 0.8);
+=======
+  /*header*/
+  header {
+    margin: 0px auto;
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -42,6 +48,7 @@ body {
 
   /*wrap01*/
   .wrap01 {
+<<<<<<< HEAD
     display: flex;
     gap: 1rem;
   }
@@ -65,12 +72,60 @@ body {
   }
   .bars {
     font-size: 1.5rem;
+=======
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    height: 100vh;
+    padding: 5rem 2rem;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  .wrap02 {
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    top: 18rem;
+    height: 100vh;
+    line-height: 2.5rem;
+    padding: 5rem 2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    display: none;
+  }
+
+  .menu {
+    font-size: 1.5rem;
+    margin: 1.2rem 0rem;
+    text-align: left;
+  }
+
+  header a {
+    color: #fff;
+  }
+
+  /*bars*/
+  header .bars {
+    font-size: 1.5rem;
+    align-items: center;
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
     position: relative;
   }
   .close {
     position: absolute;
+<<<<<<< HEAD
     top: 5%;
   }
+=======
+    right: 0px;
+    top: 0px;
+    display: none;
+  }
+
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
   /*visual*/
   .visual {
     width: 100%;
@@ -458,26 +513,46 @@ body {
     box-sizing: border-box;
   }
   footer img {
+<<<<<<< HEAD
     width: 200px;
+=======
+    width: 60%;
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
   }
 
   footer .wrap03 {
     color: darkgray;
     font-weight: bold;
+<<<<<<< HEAD
     padding-bottom: 2rem;
   }
   footer .wrap03 p {
     font-size: 1.8rem;
+=======
+    padding-bottom: 1rem;
+  }
+  footer .wrap03 p {
+    font-size: 4vw;
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
     margin-top: 1.5rem;
   }
 
   footer h2 {
+<<<<<<< HEAD
     font-size: 3rem;
   }
 
   footer .txt02 p {
     font-size: 0.9rem;
     line-height: 2rem;
+=======
+    font-size: 8vw;
+  }
+
+  footer .txt02 p {
+    font-size: 3vw;
+    line-height: 1.5rem;
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
     font-weight: bold;
   }
 
@@ -485,8 +560,13 @@ body {
     display: flex;
 
     gap: 2rem;
+<<<<<<< HEAD
     font-size: 3rem;
     padding-top: 2rem;
+=======
+    font-size: 5vw;
+    padding-top: 1rem;
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
   }
 }
 
@@ -537,7 +617,11 @@ body {
   .wrap02 .sponsor,
   .receipt,
   .menu {
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 1.4vw;
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
     font-weight: bold;
   }
 
@@ -554,6 +638,10 @@ body {
   .bars {
     display: none;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
   /*visual*/
   .visual {
     width: 100%;
@@ -926,6 +1014,7 @@ body {
     display: none;
   }
   /*footer*/
+<<<<<<< HEAD
   footer {
     width: 100%;
     height: 280px;
@@ -939,11 +1028,24 @@ body {
   }
   footer img {
     width: 320px;
+=======
+  /*footer*/
+  footer {
+    width: 100%;
+    margin: 0px auto;
+    background-color: #ffeabd;
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+  }
+  footer img {
+    width: 50%;
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
   }
 
   footer .wrap03 {
     color: darkgray;
     font-weight: bold;
+<<<<<<< HEAD
   }
   footer .wrap03 p {
     text-align: right;
@@ -968,6 +1070,29 @@ body {
     gap: 2rem;
     font-size: 3.8rem;
     padding-top: 3rem;
+=======
+    padding-bottom: 1rem;
+  }
+  footer .wrap03 p {
+    font-size: 3vw;
+    margin-top: 1.5rem;
+  }
+
+  footer h2 {
+    font-size: 5vw;
+  }
+
+  footer .txt02 p {
+    font-size: 3vw;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+  footer ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 5vw;
+    padding-top: 1rem;
+>>>>>>> 6de608406d0cd6b60015cabd25109f938fdebfb6
   }
 }
 
