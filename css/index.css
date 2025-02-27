@@ -603,11 +603,15 @@ body {
   .wrap02 .sponsor,
   .receipt,
   .menu {
+<<<<<<< HEAD
+    font-size: 1.4vw;
+=======
     font-size: 1rem;
 <<<<<<< HEAD
 =======
     font-size: 1.4vw;
 >>>>>>> 88deb96dbfde5b231854946d49b8f7a4d8be52b8
+>>>>>>> 4aa6d9aa7b71e1863f71b8981644ae4a61bf710c
     font-weight: bold;
   }
 
@@ -1003,6 +1007,9 @@ body {
   footer {
     width: 100%;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4aa6d9aa7b71e1863f71b8981644ae4a61bf710c
     margin: 0px auto;
     background-color: #ffeabd;
     padding: 2rem 4rem;
@@ -1493,8 +1500,11 @@ body {
   /*footer*/
   footer {
     width: 1200px;
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 88deb96dbfde5b231854946d49b8f7a4d8be52b8
+>>>>>>> 4aa6d9aa7b71e1863f71b8981644ae4a61bf710c
     height: 280px;
     margin: 0px auto;
     background-color: #ffeabd;
@@ -1506,6 +1516,37 @@ body {
   }
   footer img {
     width: 320px;
+<<<<<<< HEAD
+  }
+
+  footer .wrap03 {
+    color: darkgray;
+    font-weight: bold;
+  }
+  footer .wrap03 p {
+    text-align: right;
+    font-size: 1.8rem;
+  }
+
+  footer h2 {
+    font-size: 3.5rem;
+    text-align: right;
+  }
+
+  footer .txt02 p {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+    font-size: 3.8rem;
+    padding-top: 3rem;
+=======
     /*footer*/
     footer {
       width: 100%;
@@ -2044,5 +2085,6 @@ body {
       font-size: 3.8rem;
       padding-top: 3rem;
     }
+>>>>>>> 4aa6d9aa7b71e1863f71b8981644ae4a61bf710c
   }
 }

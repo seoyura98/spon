@@ -13,6 +13,14 @@ $(function () {
     $(".wrap02").hide();
   });
 
+  /*con2*/
+  $(".con2 .button").on("mouseenter", function () {
+    $(".txt1 img").addClass("in");
+  });
+  $(".con2 .button").on("mouseleave", function () {
+    $(".txt1 img").removeClass("in");
+  });
+
   /*con4*/
 
   $(".con4 li").on("mouseenter", function () {
