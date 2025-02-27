@@ -1,6 +1,5 @@
 /*header*/
 $(function () {
-<<<<<<< HEAD
   $(".bar").on("click", function () {
     $(".wrap01").show();
     $(this).hide();
@@ -37,18 +36,3 @@ $(function () {
     $(".con2 div").children("img").removeClass("in");
   });
 });
-=======
-    $(".bar").on("click", function () {
-      $(".wrap01").show();
-      $(this).hide();
-      $(".close").show();
-      $(".wrap02").show();
-    });
-    $(".close").on("click", function () {
-      $(".wrap01").hide();
-      $(this).hide();
-      $(".bar").show();
-      $(".wrap02").hide();
-    });
-  });
->>>>>>> 4aa6d9aa7b71e1863f71b8981644ae4a61bf710c
