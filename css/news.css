@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -15,6 +16,7 @@ body {
 
   font-family: "Gothic A1", serif;
   color: #222;
+  overflow-x: hidden;
 }
 
 /*모바일 버전*/
@@ -22,11 +24,9 @@ body {
   /*header*/
   header {
     margin: 0px auto;
-    background-color: rgba(255, 255, 255, 0.8);
     position: fixed;
     z-index: 10;
     width: 100%;
-
     padding: 0.5rem 1rem;
     align-items: center;
     box-sizing: border-box;
@@ -44,36 +44,53 @@ body {
 
   /*wrap01*/
   .wrap01 {
-    display: flex;
-    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    height: 100vh;
+    padding: 5rem 2rem;
+    box-sizing: border-box;
+    display: none;
   }
 
   .wrap02 {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    top: 18rem;
+    height: 100vh;
+    line-height: 2.5rem;
+    padding: 5rem 2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    display: none;
   }
 
   .menu {
-    display: none;
-  }
-
-  .wrap02 {
-    display: none;
-  }
-
-  .wrap02 .sponsor a:hover {
-    background-color: #ccc;
-    color: #ff6f09;
-  }
-  .bars {
     font-size: 1.5rem;
+    margin: 1.2rem 0rem;
+    text-align: left;
+  }
+
+  header a {
+    color: #fff;
+  }
+
+  /*bars*/
+  header .bars {
+    font-size: 1.5rem;
+    align-items: center;
     position: relative;
   }
   .close {
     position: absolute;
-    top: 5%;
+    right: 0px;
+    top: 0px;
+    display: none;
   }
+
   /*news visual*/
 
   .visual {
@@ -121,16 +138,26 @@ body {
   .con01 .st01 {
     background-color: #ff6f09;
     border-radius: 10px 10px 0px 0px;
-    padding: 1rem 3.5rem;
+    width: 100%;
     color: #fff;
     font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
   }
   .con01 .st02 {
+    width: 100%;
     background-color: #ccc;
     border-radius: 10px 10px 0px 0px;
-    padding: 1rem 2rem;
+
     color: #fff;
     font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .con01 .st02:hover {
+    background-color: #ff6f09;
   }
 
   .con01 table {
@@ -139,8 +166,9 @@ body {
   }
   .con01 td,
   th {
+    width: 100%;
     border-bottom: 1px solid #ccc;
-    padding: 1.5rem 1rem;
+    /* padding: 1rem; */
     text-align: center;
     font-size: 0.8rem;
   }
@@ -157,9 +185,11 @@ body {
     justify-content: center;
     gap: 1rem;
   }
-  .con01 .st03 {
+
+  .number li:hover {
     color: #ff6f09;
   }
+
   .con01 .st04 {
     background-color: #f9f9f9;
   }
@@ -241,13 +271,13 @@ body {
     width: 90%;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     margin: 0px auto;
   }
   .con03 img {
     width: 100%;
-    height: 150px;
+    height: 250px;
     border-radius: 10px;
     object-fit: cover;
   }
@@ -272,47 +302,49 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
   }
+  .con03 .txt04 {
+    display: none;
+  }
+  .con03 div:hover {
+    background-color: #ff6f09;
+  }
 
   /*footer*/
   footer {
     width: 100%;
-
     margin: 0px auto;
     background-color: #ffeabd;
-
     padding: 2rem 4rem;
     box-sizing: border-box;
   }
   footer img {
-    width: 200px;
+    width: 50%;
   }
 
   footer .wrap03 {
     color: darkgray;
     font-weight: bold;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
   footer .wrap03 p {
-    font-size: 1.8rem;
+    font-size: 3vw;
     margin-top: 1.5rem;
   }
 
   footer h2 {
-    font-size: 3rem;
+    font-size: 5vw;
   }
 
   footer .txt02 p {
-    font-size: 0.9rem;
+    font-size: 3vw;
     line-height: 2rem;
     font-weight: bold;
   }
-
   footer ul {
     display: flex;
-
     gap: 2rem;
-    font-size: 3rem;
-    padding-top: 2rem;
+    font-size: 5vw;
+    padding-top: 1rem;
   }
 }
 /*태블릿*/
@@ -407,6 +439,10 @@ body {
   }
 
   /*con01*/
+  .con01 {
+    width: 80%;
+    margin: 0rem auto;
+  }
   .con01 h3 {
     font-size: 2rem;
     color: #ff6f09;
@@ -420,27 +456,35 @@ body {
     margin: 4rem 0rem 0rem;
   }
   .con01 .st01 {
+    width: 100%;
     background-color: #ff6f09;
     border-radius: 10px 10px 0px 0px;
-    padding: 1rem 5rem;
+    text-align: center;
+    line-height: 50px;
     color: #fff;
     font-weight: bold;
   }
   .con01 .st02 {
+    width: 100%;
     background-color: #ccc;
     border-radius: 10px 10px 0px 0px;
-    padding: 1rem 5rem;
+    text-align: center;
     color: #fff;
     font-weight: bold;
+    line-height: 50px;
   }
-
+  .con01 .st02:hover {
+    background-color: #ff6f09;
+  }
   .con01 table {
+    width: 100%;
     margin: 0px auto;
   }
   .con01 td,
   th {
+    width: 100%;
     border-bottom: 1px solid #ccc;
-    padding: 1.5rem 2.4rem;
+    /* padding: 1.5rem; */
     text-align: center;
     font-size: 0.8rem;
   }
@@ -457,7 +501,7 @@ body {
     justify-content: center;
     gap: 1rem;
   }
-  .con01 .st03 {
+  .number li:hover {
     color: #ff6f09;
   }
   .con01 .st04 {
@@ -569,49 +613,46 @@ body {
     color: #fff;
     font-weight: bold;
   }
+  .con03 div:hover {
+    background-color: #ff6f09;
+  }
+
   /*footer*/
   footer {
     width: 100%;
-    height: 280px;
     margin: 0px auto;
     background-color: #ffeabd;
-    display: flex;
-    justify-content: space-between;
-    padding: 0rem 4rem;
+    padding: 2rem 4rem;
     box-sizing: border-box;
-    align-items: center;
   }
   footer img {
-    width: 320px;
+    width: 50%;
   }
 
   footer .wrap03 {
     color: darkgray;
     font-weight: bold;
+    padding-bottom: 1rem;
   }
   footer .wrap03 p {
-    text-align: right;
-    font-size: 1.8rem;
+    font-size: 3vw;
+    margin-top: 1.5rem;
   }
 
   footer h2 {
-    font-size: 3.5rem;
-    text-align: right;
+    font-size: 5vw;
   }
 
   footer .txt02 p {
-    font-size: 1rem;
+    font-size: 3vw;
     line-height: 2rem;
     font-weight: bold;
-    text-align: right;
   }
-
   footer ul {
     display: flex;
-    justify-content: right;
     gap: 2rem;
-    font-size: 3.8rem;
-    padding-top: 3rem;
+    font-size: 5vw;
+    padding-top: 1rem;
   }
 }
 
@@ -723,16 +764,19 @@ body {
   .con01 .st01 {
     background-color: #ff6f09;
     border-radius: 10px 10px 0px 0px;
-    padding: 1rem 5rem;
+    padding: 1rem 6.5rem;
     color: #fff;
     font-weight: bold;
   }
   .con01 .st02 {
     background-color: #ccc;
     border-radius: 10px 10px 0px 0px;
-    padding: 1rem 5rem;
+    padding: 1rem 5.5rem;
     color: #fff;
     font-weight: bold;
+  }
+  .con01 .st02:hover {
+    background-color: #ff6f09;
   }
 
   .con01 table {
@@ -741,7 +785,7 @@ body {
   .con01 td,
   th {
     border-bottom: 1px solid #ccc;
-    padding: 1.5rem 2.4rem;
+    padding: 1.5rem 2.9rem;
     text-align: center;
     font-size: 0.8rem;
   }
@@ -758,7 +802,7 @@ body {
     justify-content: center;
     gap: 1rem;
   }
-  .con01 .st03 {
+  .number li:hover {
     color: #ff6f09;
   }
   .con01 .st04 {
@@ -860,6 +904,9 @@ body {
     margin: 0px auto;
     color: #fff;
     font-weight: bold;
+  }
+  .con03 div:hover {
+    background-color: #ff6f09;
   }
 
   /*footer*/

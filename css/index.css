@@ -15,11 +15,11 @@ body {
   word-break: keep-all;
   height: 3300px;
   font-family: "Gothic A1", serif;
+  overflow-x: hidden;
 }
 
 /*모바일 버전*/
 @media (max-width: 600px) {
-  /*header*/
   /*header*/
   header {
     margin: 0px auto;
@@ -104,9 +104,8 @@ body {
   }
   .visual .txt01 {
     position: absolute;
-    left: 45%;
+    left: 5%;
     top: 60%;
-    text-align: right;
   }
   .visual h2 {
     font-size: 2rem;
@@ -127,8 +126,8 @@ body {
     font-size: 0.8rem;
     font-weight: bold;
     margin-top: 2rem;
-    margin-left: 11rem;
   }
+
   .visual ul {
     display: none;
   }
@@ -208,8 +207,8 @@ body {
     text-align: center;
     border-radius: 100%;
     position: absolute;
-    left: 80%;
-    bottom: 0%;
+    left: 70%;
+    bottom: -3%;
   }
   .con1 .button i {
     color: orangered;
@@ -227,7 +226,7 @@ body {
     margin: 3rem auto;
   }
   .con2 div {
-    display: flex;
+    /* display: flex; */
 
     gap: 2rem;
   }
@@ -239,32 +238,36 @@ body {
   }
   .con2 ul .button01 {
     border: 2px solid #ff6f09;
-    width: 100px;
+    width: 80px;
     height: 40px;
     line-height: 40px;
     border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  .con2 .button01:hover {
+    background-color: #ff6f09;
+    color: #fff;
   }
   .con2 ul {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
   .con2 .icon {
     margin-top: 2rem;
+    width: 100%;
   }
   .con2 ul img {
-    width: 90%;
+    width: 100%;
     height: 100px;
     margin-bottom: 0.7rem;
   }
   .con2 h3 {
-    font-size: 1.5rem;
-    width: 3vw;
+    font-size: 0.8rem;
   }
   .con2 ul p {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
   .con2 ul .txt5 {
     font-weight: bold;
@@ -344,15 +347,17 @@ body {
     background-size: cover;
     margin-bottom: 3rem;
   }
-
+  .con04 .left05 {
+    width: 40%;
+  }
   .con04 .wrap {
     margin-top: 3rem;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .con04 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
     margin: 3rem 0rem;
     line-height: 3rem;
@@ -365,7 +370,7 @@ body {
   }
   .con04 li {
     background-color: #ffeabd;
-    width: 80%;
+    width: 60%;
     margin: 1rem;
     padding: 1rem;
     border-radius: 10px;
@@ -425,7 +430,7 @@ body {
   .con5 .bottombox {
     color: #fff;
     background-color: #ffbe74;
-    width: 90%;
+    width: 86%;
     padding: 1.5rem;
     border-radius: 1rem;
   }
@@ -556,7 +561,7 @@ body {
   .wrap02 .sponsor,
   .receipt,
   .menu {
-    font-size: 1.4vw;
+    font-size: 1rem;
     font-weight: bold;
   }
 
@@ -573,7 +578,6 @@ body {
   .bars {
     display: none;
   }
-
   /*visual*/
   .visual {
     width: 100%;
@@ -724,6 +728,10 @@ body {
     height: 40px;
     line-height: 40px;
     border-radius: 20px;
+  }
+  .con2 .button01:hover {
+    background-color: #ff6f09;
+    color: #fff;
   }
   .con2 ul {
     display: flex;
@@ -946,7 +954,6 @@ body {
     display: none;
   }
   /*footer*/
-  /*footer*/
   footer {
     width: 100%;
     margin: 0px auto;
@@ -1063,6 +1070,7 @@ body {
     position: absolute;
     left: 2rem;
     top: 7rem;
+    overflow: hidden;
   }
   .visual h2 {
     font-size: 3rem;
@@ -1075,8 +1083,9 @@ body {
   .visual .more {
     background-color: #fff;
     color: red;
-    width: 5rem;
-    padding: 0.5rem;
+    width: 6rem;
+    height: 40px;
+    line-height: 40px;
     border-radius: 5rem;
     border: 1px solid#ccc;
     text-align: center;
@@ -1084,6 +1093,7 @@ body {
     font-weight: bold;
     margin-top: 2rem;
   }
+
   .visual ul {
     display: flex;
     color: red;
@@ -1124,9 +1134,13 @@ body {
   .con1 ul li div {
     margin: 1rem 0.3rem;
   }
+  .con1 ul h3 {
+    margin-left: 0.5rem;
+  }
   .con1 ul li p {
     font-size: 0.5rem;
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
   }
   .con1 ul li {
     width: 200px;
@@ -1195,6 +1209,10 @@ body {
     line-height: 40px;
     border-radius: 20px;
   }
+  .con2 .button01:hover {
+    background-color: #ff6f09;
+    color: #fff;
+  }
   .con2 ul {
     display: flex;
     justify-content: center;
@@ -1220,7 +1238,7 @@ body {
   /**container con03**/
   .con03 {
     width: 100%;
-    margin: 0px auto;
+    margin: 5rem auto;
     height: 550px;
   }
   .con03 .good {
@@ -1233,7 +1251,7 @@ body {
   }
 
   .con03 img {
-    width: 350px;
+    width: 300px;
     height: 410px;
   }
   .con03 .txt03 {
@@ -1251,13 +1269,13 @@ body {
   }
   .con03 .bg {
     width: 200px;
-    height: 150px;
+    height: 180px;
     background-image: url(../img/smail.svg);
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    left: 75%;
-    top: 55%;
+    left: 70%;
+    top: 48%;
   }
   .con03 h3 {
     font-size: 2.5rem;
@@ -1271,6 +1289,12 @@ body {
     line-height: 1.5rem;
   }
   .con03 .box {
+    background-color: #ff6f09;
+    width: 100px;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 30px;
     background-color: #ff6f09;
     width: 100px;
     text-align: center;
@@ -1314,7 +1338,10 @@ body {
   }
   .con04 .right05 {
     display: flex;
+    position: relative;
+    height: 100%;
   }
+
   .con04 li {
     background-color: #fff;
     width: 150px;
