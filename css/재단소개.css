@@ -1,0 +1,699 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+  }
+html,
+body{
+    font-size: 16px; 
+    font-family: "Gothic A1", serif;
+}
+
+@media(max-width:600px){
+/*모바일 버전*/
+/*header*/
+header {
+  margin: 0px auto;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+header a:hover {
+  color: #ff6f09;
+}
+
+h1 {
+  width: 6rem;
+  height: 32px;
+}
+
+/*wrap01*/
+.wrap01 {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  height: 100vh;
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+  display: none;
+}
+
+.wrap02 {
+  width: 100%;
+  position: absolute;
+  left: 0rem;
+  top: 18rem;
+  height: 100vh;
+  line-height: 2.5rem;
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: none;
+}
+
+.menu {
+  font-size: 1.5rem;
+  margin: 1.2rem 0rem;
+  text-align: left;
+}
+
+header a {
+  color: #fff;
+}
+
+/*bars*/
+header .bars {
+  font-size: 1.5rem;
+  align-items: center;
+  position: relative;
+}
+.close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+
+/*visual*/
+.visual{
+  width: 100%;
+  height: 500px;
+  background: url(../img/조별5.jpg) no-repeat center / cover;
+}
+.visual h2{
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 5vw;
+}
+
+/*container*/
+
+.container{
+  width: 100%;
+  margin: 0rem auto;
+}
+
+/*con1*/
+
+.con1{
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  
+}
+.con1 img{
+  width: 100%;
+}
+.con1 h3{
+  font-size: 3vw;
+  line-height: 2rem;
+  color: #ff6f09;
+  margin-top: 1rem;
+}
+.con1 span{
+  color: #222;
+}
+.con1 p{
+  font-size: 1.5vw;
+  line-height: 1rem;
+  color: #333;
+}
+
+/*con2*/
+
+.con2 {
+  width: 100%;
+
+  margin: 1rem auto;
+  background-color: #ffd2b4;
+  position: relative;
+  padding: 50px 0px;
+}
+.con2 ul {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0px auto;
+}
+.con2 li {
+  width: calc(100% / 2 - 20px);
+}
+
+.con2 li:nth-child(2n) {
+  margin-top: 50px;
+}
+.con2 img {
+  width: 100%;
+  border-radius: 10px;
+}
+.con2 ul li p {
+  font-size: 2vw;
+  line-height: 1.2rem;
+  color: #333;
+}
+.con2 ul li h4 {
+  width: 100%;
+  margin: 0.5rem auto;
+}
+.con2 div img {
+  width: 15%;
+  position: absolute;
+  left: 80%;
+  top: 55%;
+}
+
+
+/*con3*/
+
+.con3{
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/배경1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.con3 h3{
+  color: #ff6f09;
+  font-size: 5vw;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*footer*/
+footer {
+  width: 100%;
+
+  margin: 0px auto;
+  background-color: #ffeabd;
+
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+}
+footer img {
+  width: 60%;
+}
+
+footer .wrap03 {
+  color: darkgray;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+footer .wrap03 p {
+  font-size: 4vw;
+  margin-top: 1.5rem;
+}
+
+footer h2 {
+  font-size: 8vw;
+}
+
+footer .txt02 p {
+  font-size: 3vw;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+footer ul {
+  display: flex;
+
+  gap: 2rem;
+  font-size: 5vw;
+  padding-top: 1rem;
+}
+
+
+}
+
+/*태블릿*/
+@media (min-width: 600px) and (max-width: 1220px) {
+  /*header*/
+  header {
+    margin: 0px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  header a:hover {
+    color: #ff6f09;
+  }
+
+  h1 {
+    width: 5.5rem;
+    height: 31.65px;
+  }
+
+  header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 31.65px;
+    width: 100%;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 0rem 1rem;
+  }
+  /*wrap01*/
+  .wrap01 {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .wrap02 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .wrap02 .sponsor,
+  .receipt,
+  .menu {
+    font-size: 1.4vw;
+    font-weight: bold;
+  }
+
+  .wrap02 .sponsor a {
+    background-color: #ff6f09;
+    color: #fff;
+    padding: 1.3rem;
+  }
+
+  .wrap02 .sponsor a:hover {
+    background-color: #ccc;
+    color: #ff6f09;
+  }
+  .bars {
+    display: none;
+  }
+
+  /*visual*/
+  .visual{
+    width: 100%;
+    height: 500px;
+    background: url(../img/조별5.jpg) no-repeat center / cover;
+  }
+  .visual h2{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3vw;
+  }
+
+/*container*/
+.container{
+  width: 100%;
+  margin: 0rem auto;
+}
+
+/*con1*/
+
+.con1{
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  
+}
+.con1 img{
+  width: 100%;
+}
+.con1 h3{
+  font-size: 3vw;
+  line-height: 3rem;
+  color: #ff6f09;
+  margin-top: 2rem;
+}
+.con1 span{
+  color: #222;
+}
+.con1 p{
+  font-size: 1.5vw;
+  line-height: 1.5rem;
+  color: #333;
+}
+
+/*con2*/
+
+.con2 {
+  width: 100%;
+
+  margin: 1rem auto;
+  background-color: #ffd2b4;
+  position: relative;
+  padding: 50px 0px;
+}
+.con2 ul {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0px auto;
+}
+.con2 li {
+  width: calc(100% / 2 - 20px);
+}
+
+.con2 li:nth-child(2n) {
+  margin-top: 50px;
+}
+.con2 img {
+  width: 100%;
+  border-radius: 10px;
+}
+.con2 ul li p {
+  font-size: 1.5vw;
+  line-height: 1.2rem;
+  color: #333;
+}
+.con2 ul li h4 {
+  width: 100%;
+  margin: 0.5rem auto;
+}
+.con2 div img {
+  width: 15%;
+  position: absolute;
+  left: 83%;
+  top: 55%;
+}
+
+/*con3*/
+
+.con3{
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/배경1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.con3 h3{
+  color: #ff6f09;
+  font-size: 5vw;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  margin: 0px auto;
+  background-color: #ffeabd;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+}
+footer img {
+  width: 50%;
+}
+
+footer .wrap03 {
+  color: darkgray;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+footer .wrap03 p {
+  font-size: 3vw;
+  margin-top: 1.5rem;
+}
+
+footer h2 {
+  font-size: 5vw;
+}
+
+footer .txt02 p {
+  font-size: 3vw;
+  line-height: 2rem;
+  font-weight: bold;
+}
+footer ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 5vw;
+  padding-top: 1rem;
+}
+
+}
+
+
+@media(min-width:1220px){
+/*pc 버전*/
+
+/*header*/
+header {
+  margin: 0px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  align-items: center;
+  box-sizing: border-box;
+}
+header a:hover {
+  color: #ff6f09;
+}
+
+h1 {
+  width: 5.5rem;
+  height: 31.65px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 31.65px;
+  width: 1200px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 0rem 1rem;
+}
+/*wrap01*/
+.wrap01 {
+  display: flex;
+  gap: 1rem;
+}
+
+.wrap02 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wrap02 .sponsor,
+.receipt,
+.menu {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.wrap02 .sponsor a {
+  background-color: #ff6f09;
+  color: #fff;
+  padding: 1.3rem;
+}
+
+.wrap02 .sponsor a:hover {
+  background-color: #ccc;
+  color: #ff6f09;
+}
+.bars {
+  display: none;
+}
+
+/*visual*/
+
+  .visual {
+    width: 1200px;
+    height: 500px;
+    background-image: url(../img/조별5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px auto;
+    position: relative;
+  }
+  .visual h2{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*container*/
+
+.container{
+    width: 1200px;
+    margin: 0rem auto;
+}
+
+/*con1*/
+
+.con1{
+    width: 1200px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.con1 img{
+    width: 100%;
+}
+.con1 h3{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #ff6f09;
+    margin-top: 2rem;
+}
+.con1 span{
+    color: #222;
+}
+.con1 p{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: #333;
+}
+
+/*con2*/
+
+.con2{
+    width: 1200px;
+    height: 1300px;
+    margin: 3rem auto;
+    background-color: #ffd2b4;
+    position: relative;
+}
+.con2 ul{
+  width:750px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+.con2 li{
+    width: 350px;
+}
+
+.con2 li:nth-child(2n){
+  margin-top: 100px;
+}
+.con2 img{
+    width: 350px;
+    border-radius: 10px;
+}
+.con2 ul li p{
+    font-size: 0.7rem;
+    line-height: 1rem;
+    color: #333;
+}
+.con2 ul li h4{
+    width: 350px;
+    margin: 1rem auto;
+}
+.con2 ul div img{
+  width: 150px;
+  position: absolute;
+  left: 90%;
+  top: 50%;
+}
+
+/*con3*/
+
+.con3{
+  width: 1200px;
+  height: 500px;
+  background-image: url(../img/배경1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.con3 h3{
+  color: #ff6f09;
+  font-size: 4rem;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*footer*/
+footer {
+  width: 1200px;
+  height: 280px;
+  margin: 0px auto;
+  background-color: #ffeabd;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 4rem;
+  box-sizing: border-box;
+  align-items: center;
+}
+footer img {
+  width: 320px;
+}
+
+footer .wrap03 {
+  color: darkgray;
+  font-weight: bold;
+}
+footer .wrap03 p {
+  text-align: right;
+  font-size: 1.8rem;
+}
+
+footer h2 {
+  font-size: 3.5rem;
+  text-align: right;
+}
+
+footer .txt02 p {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+footer ul {
+  display: flex;
+  justify-content: right;
+  gap: 2rem;
+  font-size: 3.8rem;
+  padding-top: 3rem;
+}
+
+}
