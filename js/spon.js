@@ -12,4 +12,14 @@ $(function () {
     $(".bar").show();
     $(".wrap02").hide();
   });
+
+  /*con4*/
+
+  $(".con4 li").on("mouseenter", function () {
+    let i = $(this).index();
+    $(".con4 li").eq(i).children("div").stop().slideDown(1000);
+  });
+  $(".con4 li").on("mouseleave", function () {
+    $(".con4 li div").stop().slideUp(1000);
+  });
 });
