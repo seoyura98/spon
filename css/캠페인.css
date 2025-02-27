@@ -130,6 +130,10 @@ body {
 
   /*con02 (실제로는 con1)*/
 
+  .con02 {
+    padding: 1rem;
+  }
+
   .con02 p {
     font-size: 4vw;
     text-align: center;
@@ -184,7 +188,7 @@ body {
     background-size: cover;
     box-sizing: border-box;
     width: 100%;
-    height: 600px;
+    height: 100vw;
     font-weight: bold;
     margin: 8rem 0rem 5rem;
     padding: 0.5rem 3rem;
@@ -221,6 +225,10 @@ body {
 
   /*con03*/
 
+  .con03 {
+    padding: 1rem;
+  }
+
   .con03 h3 {
     font-size: 3.5vw;
     text-align: center;
@@ -239,12 +247,13 @@ body {
     justify-content: center;
     gap: 2rem;
     text-align: center;
+    width: 100%;
   }
 
   .con03 li {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 2rem;
-    height: 55vw;
+    height: 50vw;
   }
   .con03 img {
     width: 100%;
@@ -258,11 +267,14 @@ body {
   }
   .con03 p {
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 
   /*con04*/
 
+  .con04 {
+    padding: 1rem;
+  }
   .con04 ul {
     border-bottom: 1px solid#ccc;
     margin-bottom: 2rem;
@@ -444,6 +456,10 @@ body {
 
   /*con02 (실제로는 con1)*/
 
+  .con02 {
+    padding: 2rem;
+  }
+
   .con02 p {
     font-size: 3.5vw;
     text-align: center;
@@ -539,6 +555,10 @@ body {
 
   /*con03*/
 
+  .con03 {
+    padding: 1.5rem;
+  }
+
   .con03 h3 {
     font-size: 4vw;
     text-align: center;
@@ -581,6 +601,9 @@ body {
 
   /*con04*/
 
+  .con04 {
+    padding: 1.5rem;
+  }
   .con04 ul {
     border-bottom: 1px solid#ccc;
     margin-bottom: 2rem;
@@ -772,9 +795,18 @@ body {
     gap: 1rem;
   }
 
+  .con02 li {
+    overflow: hidden;
+  }
+
   .con02 img {
     width: 350px;
     height: 350px;
+    transition: 1s;
+  }
+
+  .on img {
+    transform: scale(1.5);
   }
 
   .con02 div {
