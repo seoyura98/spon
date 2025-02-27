@@ -1050,6 +1050,12 @@ body {
     left: 65%;
     top: 60%;
   }
+
+  .con2 img {
+    transition: 1s;
+    overflow: hidden;
+  }
+
   .con2 .button {
     background-color: #222;
     color: #fff;
@@ -1061,6 +1067,9 @@ body {
   }
   .con2 .button:hover {
     background-color: #ff6f09;
+  }
+  .in {
+    transform: scale(1.2);
   }
 
   /*con3*/
